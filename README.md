@@ -194,3 +194,6 @@ Para um agente de IA, gerenciamento de memória é essencial e vem de duas forma
 - Permite a recuperação rápida de informações históricas
 
 Esses sistemas de memória permitem que os agentes recuperem informações coletadas de ferramentas externas.
+
+
+## MCP
