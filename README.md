@@ -215,5 +215,8 @@ Permite utilizar dados que podem ser lidos pelos clients. Os recursos são contr
 
 Permite que o server defina templates de prompts que podem ser usados pelos clients. Prompts são controlados pelo usuário, ou seja, o usuário precisa selecionar o prompt que deseja usar. Podem ser templates estáticos ou dinâmicos, inclusive pegando contexto de algum resource. Dependendo da ferramenta acessamos o prompt utilizando **/**.
 
+### Formatos de comunicação
 
-### Formatos de comunicação 
+#### SSE
+
+#### Stdio
