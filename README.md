@@ -219,4 +219,8 @@ Permite que o server defina templates de prompts que podem ser usados pelos clie
 
 #### SSE
 
+Transporte HTTP Transmitido : Utiliza HTTP POST para mensagens de cliente para servidor com Eventos Enviados pelo Servidor opcionais para recursos de streaming. Este transporte permite a comunicação com servidores remotos e suporta métodos de autenticação HTTP padrão, incluindo tokens de portador, chaves de API e cabeçalhos personalizados. O MCP recomenda o uso do OAuth para obter tokens de autenticação.
+
 #### Stdio
+
+usa fluxos de entrada/saída padrão para comunicação direta de processos entre processos locais na mesma máquina, fornecendo desempenho ideal sem sobrecarga de rede.
