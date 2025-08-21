@@ -195,5 +195,22 @@ Para um agente de IA, gerenciamento de memória é essencial e vem de duas forma
 
 Esses sistemas de memória permitem que os agentes recuperem informações coletadas de ferramentas externas.
 
-
 ## MCP
+
+MCP é um protocolo que visa fornecer um padrão de comunicação entre os LLMs e ferramentas ou fonte de dados.
+
+Com esse protocolo é possível criar um MCP server e prover ferramentas, recursos e prompts para IA, adicionando mais poder e conhecimento de regras de negócio ao seu modelo. Alguns exemplos de MCP server: Postgres, Github, Docker, etc.
+
+Sendo necessário que haja MCP clients para realizar as chamadas para o servidor. Alguns exemplos de MCP client: Github Copilot, Cursor, Claude Desktop, Claude Code.
+
+### Tools
+
+São ferramentas que realizam ações. São controladas pelo modelo e o próprio LLM decide quando chamar. O LLM também possui a possibilidade de realizar o auto discovery, ou seja, possui formas de entender quais as tools estão disponíveis baseado no prompt de entrada.
+
+### Resources
+
+Permite utilizar dados que podem ser lidos pelos clients. Os recursos são controlados pelos clients, logo são os clientes que decidem quando devem usar. Além disso os recursos podem ser diferentes fontes de dados como arquivos, banco de dados, respostas de APIs, imagem, arquivos de log, etc.
+
+### Prompts
+
+Permite que o server defina templates de prompts que podem ser usados pelos clients. Prompts são controlados pelo usuário, ou seja, o usuário precisa selecionar o prompt que deseja usar. Podem ser templates estáticos ou dinâmicos, inclusive pegando contexto de algum resource. Dependendo da ferramenta acessamos o prompt utilizando **/**.
